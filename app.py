@@ -16,7 +16,7 @@ if __name__ == "__main__":
 my_logger = logging.getLogger('test_logger')
 my_logger.setLevel(logging.DEBUG)
 
-handler = graypy.GELFTCPHandler('192.168.49.1', 12201)
+handler = graypy.GELFTLSHandler('192.168.49.1', 12201)
 my_logger.addHandler(handler)
 
 my_logger.debug('This is a test from a Python script!')
